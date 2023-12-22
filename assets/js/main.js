@@ -78,8 +78,9 @@ function displayWeatherData(data){
     data.DailyForecasts.forEach(function (forecast,index) {
         
         var forecastDiv = document.createElement('div');
+        var formattedDate = new Date (forecast.Date).toISOString().split('T')[0];
         forecastDiv.innerHTML = '<h3 class="text-white"> Weather status of today </h3>'+ 
-        '<p class="text-white"> Date <i class="bi bi-calendar3"></i> : ' + forecast.Date + '</p>' + 
+        '<p class="text-white"> Date <i class="bi bi-calendar3"></i> : ' + formattedDate + '</p>' + 
          '<p class="text-white"> Max Temperature <i class="bi bi-thermometer-high"></i> : ' + forecast.Temperature.Maximum.Value + ' ' + forecast.Temperature.Maximum.Unit  + '</p>' +
          '<p class="text-white"> Min Temperature <i class="bi bi-thermometer"></i> : ' + forecast.Temperature.Minimum.Value+ ' ' +forecast.Temperature.Minimum.Unit + '</p>'+  
          '<p class="text-white"> Day <i class="bi bi-brightness-high-fill"></i> : ' + forecast.Day.IconPhrase + '</p>' + 
