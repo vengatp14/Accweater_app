@@ -1,0 +1,34 @@
+/* boostrap icons  */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+
+/* css  */
+.tittle_style{
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
+
+.card_style{
+    background: rgba( 3, 3, 3, 0.35 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 7.5px );
+-webkit-backdrop-filter: blur( 7.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.hero{
+    margin-top: 30vh;
+}
+
+.btn-bg-css{
+
+    background-color: rgb(240 85 20);
+    color: white;
+}
+
+.Body_bg_gif{
+    background-image: url('../imgs/bg_img.gif') ;
+    background-attachment: fixed;
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
